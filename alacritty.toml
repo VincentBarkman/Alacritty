@@ -1,51 +1,51 @@
-
 # Font configuration
 [font]
 size = 11.0
 
 [font.normal]
-family = "JetBrains Mono"
+family = "JetBrains Mono Nerd Font"
 style = "Regular"
 
 [font.bold]
-family = "JetBrains Mono"
+family = "JetBrains Mono Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "JetBrains Mono"
+family = "JetBrains Mono Nerd Font"
 style = "Italic"
 
 [font.bold_italic]
-family = "JetBrains Mono"
+family = "JetBrains Mono Nerd Font"
 style = "Bold Italic"
 
-# Colors (One Dark)
+# Colors (One Dark Theme)
 # Default colors
 [colors.primary]
-background = '#282c34'
-foreground = '#abb2bf'
+background = '#282c34'    # Background color
+foreground = '#abb2bf'    # Foreground color
 
 # Normal colors
 [colors.normal]
-black = '#1e2127'
-red = '#e06c75'
-green = '#98c379'
-yellow = '#d19a66'
-blue = '#61afef'
-magenta = '#c678dd'
-cyan = '#56b6c2'
-white = '#abb2bf'
+black = '#1e2127'         # Normal black
+red = '#e06c75'           # Normal red
+green = '#98c379'         # Normal green
+yellow = '#d19a66'        # Normal yellow
+blue = '#61afef'          # Normal blue
+magenta = '#c678dd'       # Normal magenta
+cyan = '#56b6c2'          # Normal cyan
+white = '#abb2bf'         # Normal white
 
 # Bright colors
 [colors.bright]
-black = '#5c6370'
-red = '#e06c75'
-green = '#98c379'
-yellow = '#d19a66'
-blue = '#61afef'
-magenta = '#c678dd'
-cyan = '#56b6c2'
-white = '#ffffff'
+black = '#5c6370'         # Bright black
+red = '#e06c75'           # Bright red
+green = '#98c379'         # Bright green
+yellow = '#d19a66'        # Bright yellow
+blue = '#61afef'          # Bright blue
+magenta = '#c678dd'       # Bright magenta
+cyan = '#56b6c2'          # Bright cyan
+white = '#ffffff'         # Bright white
 
+# Shell configuration
 [shell]
-program = "/usr/bin/fish"
+program = "/usr/bin/fish"  # Path to Fish shell
