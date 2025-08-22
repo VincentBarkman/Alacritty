@@ -1,54 +1,64 @@
-draw_bold_text_with_bright_colors: true
+draw_bold_text_with_bright_colors = true
 
-font:
-  normal:
-    family: "BigBlue TerminalPlus"
-    style: Regular
-  size: 9.0
-  offset:
-    x: 0
-    y: 1
-  glyph_offset:
-    x: 0
-    y: 1
+[font]
+size = 9.0
 
-colors:
-  primary:
-    background: '#1e2227'   # dark background
-    foreground: '#abb2bf'   # standard foreground text
+[font.normal]
+family = "BigBlue TerminalPlus"
+style = "Regular"
 
-  normal:
-    black:   '#1e2227'      # dark base
-    red:     '#e06c75'      # soft red
-    green:   '#98c379'      # muted green
-    yellow:  '#e5c07b'      # gold-yellow
-    blue:    '#61afef'      # soft blue
-    magenta: '#c678dd'      # purple
-    cyan:    '#56b6c2'      # teal/cyan
-    white:   '#abb2bf'      # light text
+[font.offset]
+x = 0
+y = 1
 
-  bright:
-    black:   '#5c6370'      # bright black (gray)
-    red:     '#f44747'      # brighter red
-    green:   '#a5e075'      # bright green
-    yellow:  '#f0a45d'      # bright orange-yellow
-    blue:    '#528bff'      # bright blue
-    magenta: '#de73ff'      # bright purple
-    cyan:    '#4cd1e0'      # bright cyan
-    white:   '#ffffff'      # true white
+[font.glyph_offset]
+x = 0
+y = 1
 
-  cursor:
-    text:   '#1e2227'
-    cursor: '#abb2bf'
+[colors]
 
-  selection:
-    text:       '#1e2227'
-    background: '#e6e6e6'
+[colors.primary]
+background = "#1e2227"  # dark background
+foreground = "#abb2bf"  # standard foreground text
 
+[colors.normal]
+black   = "#1e2227"  # dark base
+red     = "#e06c75"  # soft red
+green   = "#98c379"  # muted green
+yellow  = "#e5c07b"  # gold-yellow
+blue    = "#61afef"  # soft blue
+magenta = "#c678dd"  # purple
+cyan    = "#56b6c2"  # teal/cyan
+white   = "#abb2bf"  # light text
 
-env:
-  TERM: xterm-256color
+[colors.bright]
+black   = "#5c6370"  # bright black (gray)
+red     = "#f44747"  # brighter red
+green   = "#a5e075"  # bright green
+yellow  = "#f0a45d"  # bright orange-yellow
+blue    = "#528bff"  # bright blue
+magenta = "#de73ff"  # bright purple
+cyan    = "#4cd1e0"  # bright cyan
+white   = "#ffffff"  # true white
 
-#key_bindings:
-#  - { key: H, mods: Control|Shift, chars: "\x02p" } # tmux previous-window
-#  - { key: L, mods: Control|Shift, chars: "\x02n" } # tmux next-window
+[colors.cursor]
+text   = "#1e2227"
+cursor = "#abb2bf"
+
+[colors.selection]
+text = "#1e2227"
+background = "#e6e6e6"
+
+[env]
+TERM = "xterm-256color"
+
+# Key bindings (example; TOML uses [[keyboard.bindings]])
+# [[keyboard.bindings]]
+# key = "H"
+# mods = "Control|Shift"
+# chars = "\u0002p"  # tmux previous-window
+#
+# [[keyboard.bindings]]
+# key = "L"
+# mods = "Control|Shift"
+# chars = "\u0002n"  # tmux next-window
