@@ -1,51 +1,54 @@
-# Font configuration
-[font]
-size = 14.0
+draw_bold_text_with_bright_colors: true
 
-[font.normal]
-family = "JetBrains Mono Nerd Font"
-style = "Regular"
+font:
+  normal:
+    family: "BigBlue TerminalPlus"
+    style: Regular
+  size: 9.0
+  offset:
+    x: 0
+    y: 1
+  glyph_offset:
+    x: 0
+    y: 1
 
-[font.bold]
-family = "JetBrains Mono Nerd Font"
-style = "Bold"
+colors:
+  primary:
+    background: '#1e2227'   # dark background
+    foreground: '#abb2bf'   # standard foreground text
 
-[font.italic]
-family = "JetBrains Mono Nerd Font"
-style = "Italic"
+  normal:
+    black:   '#1e2227'      # dark base
+    red:     '#e06c75'      # soft red
+    green:   '#98c379'      # muted green
+    yellow:  '#e5c07b'      # gold-yellow
+    blue:    '#61afef'      # soft blue
+    magenta: '#c678dd'      # purple
+    cyan:    '#56b6c2'      # teal/cyan
+    white:   '#abb2bf'      # light text
 
-[font.bold_italic]
-family = "JetBrains Mono Nerd Font"
-style = "Bold Italic"
+  bright:
+    black:   '#5c6370'      # bright black (gray)
+    red:     '#f44747'      # brighter red
+    green:   '#a5e075'      # bright green
+    yellow:  '#f0a45d'      # bright orange-yellow
+    blue:    '#528bff'      # bright blue
+    magenta: '#de73ff'      # bright purple
+    cyan:    '#4cd1e0'      # bright cyan
+    white:   '#ffffff'      # true white
 
-# Colors (One Dark Theme)
-# Default colors
-[colors.primary]
-background = '#282c34'    # Background color
-foreground = '#abb2bf'    # Foreground color
+  cursor:
+    text:   '#1e2227'
+    cursor: '#abb2bf'
 
-# Normal colors
-[colors.normal]
-black = '#1e2127'         # Normal black
-red = '#e06c75'           # Normal red
-green = '#98c379'         # Normal green
-yellow = '#d19a66'        # Normal yellow
-blue = '#61afef'          # Normal blue
-magenta = '#c678dd'       # Normal magenta
-cyan = '#56b6c2'          # Normal cyan
-white = '#abb2bf'         # Normal white
+  selection:
+    text:       '#1e2227'
+    background: '#e6e6e6'
 
-# Bright colors
-[colors.bright]
-black = '#5c6370'         # Bright black
-red = '#e06c75'           # Bright red
-green = '#98c379'         # Bright green
-yellow = '#d19a66'        # Bright yellow
-blue = '#61afef'          # Bright blue
-magenta = '#c678dd'       # Bright magenta
-cyan = '#56b6c2'          # Bright cyan
-white = '#ffffff'         # Bright white
 
-# Shell configuration
-[shell]
-program = "/usr/bin/fish"  # Path to Fish shell
+env:
+  TERM: xterm-256color
+
+#key_bindings:
+#  - { key: H, mods: Control|Shift, chars: "\x02p" } # tmux previous-window
+#  - { key: L, mods: Control|Shift, chars: "\x02n" } # tmux next-window
